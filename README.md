@@ -47,6 +47,12 @@ To send notifications via [Telegram][telegram] you need a bot `token` and your
 personal `chat_id`. To create both, please see the documentation of the
 [BotFather][botfather].
 
+`chat_id` can be optained with:
+```bash
+curl \
+    "https://api.telegram.org/bot<TOKEN>/getUpdates""
+```
+
 Once obtained, both secrets need to be configured in
 `/usr/local/etc/systemd-telegram/telegram.env`.
 
