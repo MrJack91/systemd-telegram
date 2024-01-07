@@ -19,6 +19,7 @@ This repository provides a script and systemd service to send notifications via
 ## Explanation
 - to monitor a specify service (s1), add the `OnFailure` prop on s1.
     - if will call the telegram service, where the s1 name as instance name.
+    - service will send message containing log as attachment just from the according InvocationID (execution id) -> fancy!
 - can be executed as sys or user service -> needed to monitor according service types
 - to manage existinct dependents of notifier: (all for recursion, reverse for dependents instead of dependencies)
     - will only work for exactly one instance at a time
