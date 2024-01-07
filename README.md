@@ -10,6 +10,18 @@ This repository provides a script and systemd service to send notifications via
 
 - [systemd][systemd]
 
+
+## Changes made by MrJack
+- just added a example for optaining chat_id from telegram
+- add a general explanation
+
+
+## Explanation
+- to monitor a specify service (s1), add the `OnFailure` prop on s1.
+    - if will call the telegram service, where the s1 name as instance name.
+- can be executed as sys or user service -> needed to monitor according service types
+
+
 ## Installation
 
 The script, as well as a systemd [service][systemd.service], can be installed
